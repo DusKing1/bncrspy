@@ -7,6 +7,7 @@ let RspyList = {
             Script: 'KingRan_KR/jd_luck_draw.js',
             ListenEnv: [
                 'LUCK_DRAW_URL',
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             ],
             TimeOut: 50,
             Interval: 0,
@@ -19,6 +20,7 @@ let RspyList = {
             ListenEnv: [
                 'jd_wxFansInterActionActivity_activityId',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 50,
             Interval: 0,
             RunPanel: [0],
@@ -30,6 +32,7 @@ let RspyList = {
             ListenEnv: [
                 'jd_sevenDay_activityUrl',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -41,6 +44,7 @@ let RspyList = {
             ListenEnv: [
                 'jd_wxMcLevelAndBirthGifts_activityId',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -52,6 +56,7 @@ let RspyList = {
             ListenEnv: [
                 'jd_wxCollectionActivity_activityUrl',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -63,6 +68,7 @@ let RspyList = {
             ListenEnv: [
                 'jd_wxShopFollowActivity_activityUrl',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -74,6 +80,7 @@ let RspyList = {
             ListenEnv: [
                 'jd_wxShareActivity_activityId',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -85,6 +92,7 @@ let RspyList = {
             ListenEnv: [
                 'jd_wxCollectCard_activityId',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -96,6 +104,7 @@ let RspyList = {
             ListenEnv: [
                 'yhyauthorCode',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -107,6 +116,7 @@ let RspyList = {
             ListenEnv: [
                 'jd_wxKnowledgeActivity_activityUrl',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -118,6 +128,7 @@ let RspyList = {
             ListenEnv: [
                 'jd_wxCartKoi_activityId',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -129,6 +140,7 @@ let RspyList = {
             ListenEnv: [
                 'jd_wxSecond_activityId',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -140,6 +152,7 @@ let RspyList = {
             ListenEnv: [
                 'jd_wxShopGift_activityUrl',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -151,6 +164,7 @@ let RspyList = {
             ListenEnv: [
                 'jd_showInviteJoin_activityUrl',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -162,6 +176,7 @@ let RspyList = {
             ListenEnv: [
                 'VENDER_ID',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -174,6 +189,7 @@ let RspyList = {
                 'jd_wdzfd_activityId',
                 'jd_wdzfd_activityUrl'
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -186,6 +202,7 @@ let RspyList = {
                 'jd_wdz_activityId',
                 'jd_wdz_activityUrl'
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -197,6 +214,7 @@ let RspyList = {
             ListenEnv: [
                 'jd_lottery_activityUr',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -208,6 +226,7 @@ let RspyList = {
             ListenEnv: [
                 'jd_collect_shop_activityUrl',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -219,6 +238,7 @@ let RspyList = {
             ListenEnv: [
                 'jd_collect_item_activityUrl',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -230,6 +250,7 @@ let RspyList = {
             ListenEnv: [
                 'jd_cart_item_activityUrl',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -241,6 +262,7 @@ let RspyList = {
             ListenEnv: [
                 'jd_lzkj_loreal_cart_url',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -252,6 +274,7 @@ let RspyList = {
             ListenEnv: [
                 'jd_lzkj_loreal_draw_url',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -263,6 +286,7 @@ let RspyList = {
             ListenEnv: [
                 'jd_lzkj_loreal_followShop_url',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -274,6 +298,7 @@ let RspyList = {
             ListenEnv: [
                 'jd_lzkj_loreal_invite_url',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -286,6 +311,7 @@ let RspyList = {
                 'jd_cjhy_activityId',
                 'jd_cjhy_activityUrl'
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -297,6 +323,7 @@ let RspyList = {
             ListenEnv: [
                 'jd_cjdaily_activityId',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -309,6 +336,7 @@ let RspyList = {
                 'jd_zdjr_activityId',
                 'jd_zdjr_activityUrl'
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -320,6 +348,7 @@ let RspyList = {
             ListenEnv: [
                 'jd_drawCenter_activityId',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -331,6 +360,7 @@ let RspyList = {
             ListenEnv: [
                 'jd_daily_activityId',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -342,6 +372,7 @@ let RspyList = {
             ListenEnv: [
                 'jd_wxgame_activityId',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -353,6 +384,7 @@ let RspyList = {
             ListenEnv: [
                 'jd_wxUnPackingActivity_activityId',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -364,6 +396,7 @@ let RspyList = {
             ListenEnv: [
                 'jd_wxBuildActivity_activityId',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -375,6 +408,7 @@ let RspyList = {
             ListenEnv: [
                 'M_WX_LUCK_DRAW_URL',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -386,6 +420,7 @@ let RspyList = {
             ListenEnv: [
                 'M_WX_TEAM_URL',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -397,6 +432,7 @@ let RspyList = {
             ListenEnv: [
                 'M_WX_SHOP_GIFT_URL',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -408,6 +444,7 @@ let RspyList = {
             ListenEnv: [
                 'M_WX_SHARE_URL',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -419,6 +456,7 @@ let RspyList = {
             ListenEnv: [
                 'M_WX_SECOND_DRAW_URL',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -430,6 +468,7 @@ let RspyList = {
             ListenEnv: [
                 'M_WX_LEVEL_BIRTH_URL',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -441,6 +480,7 @@ let RspyList = {
             ListenEnv: [
                 'M_WX_KNOWLEDGE_URL',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -452,6 +492,7 @@ let RspyList = {
             ListenEnv: [
                 'M_WX_FOLLOW_DRAW_URL',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -463,6 +504,7 @@ let RspyList = {
             ListenEnv: [
                 'M_WX_GAME_URL',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -474,6 +516,7 @@ let RspyList = {
             ListenEnv: [
                 'M_WX_COMPLETE_DRAW_URL',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -485,6 +528,7 @@ let RspyList = {
             ListenEnv: [
                 'M_WX_COLLECT_CARD_URL',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -496,6 +540,7 @@ let RspyList = {
             ListenEnv: [
                 'M_WX_CENTER_DRAW_URL',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -507,6 +552,7 @@ let RspyList = {
             ListenEnv: [
                 'M_WX_BUILD_DRAW_URL',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -518,6 +564,7 @@ let RspyList = {
             ListenEnv: [
                 'M_WX_ADD_CART_URL',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -529,6 +576,7 @@ let RspyList = {
             ListenEnv: [
                 'M_FOLLOW_SHOP_ARGV',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -540,6 +588,7 @@ let RspyList = {
             ListenEnv: [
                 'M_FAV_SHOP_ARGV',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -551,6 +600,7 @@ let RspyList = {
             ListenEnv: [
                 'M_FANS_RED_PACKET_URL',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -562,6 +612,7 @@ let RspyList = {
             ListenEnv: [
                 'M_WX_DADOUDOU_URL',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -573,6 +624,7 @@ let RspyList = {
             ListenEnv: [
                 'jd_wxShopGiftId',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -584,6 +636,7 @@ let RspyList = {
             ListenEnv: [
                 'jd_wxShopFollowId',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -595,6 +648,7 @@ let RspyList = {
             ListenEnv: [
                 'jd_wxCompleteInfoId',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -606,6 +660,7 @@ let RspyList = {
             ListenEnv: [
                 'jd_wxCollectionActivityUrl',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -617,6 +672,7 @@ let RspyList = {
             ListenEnv: [
                 'jd_wxBulidActivityId',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -628,6 +684,7 @@ let RspyList = {
             ListenEnv: [
                 'jd_wxBirthGiftsId',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -639,6 +696,7 @@ let RspyList = {
             ListenEnv: [
                 'jd_wdz_activityId',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -650,6 +708,7 @@ let RspyList = {
             ListenEnv: [
                 'jd_shopFollowGiftId',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -661,6 +720,7 @@ let RspyList = {
             ListenEnv: [
                 'jd_shopCollectGiftId',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],
@@ -672,6 +732,7 @@ let RspyList = {
             ListenEnv: [
                 'DPCJID',
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 0,
             Interval: 0,
             RunPanel: [0],

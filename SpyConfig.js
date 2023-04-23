@@ -7,8 +7,8 @@ let RspyList = {
             Script: 'KingRan_KR/jd_luck_draw.js',
             ListenEnv: [
                 'LUCK_DRAW_URL',
-            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
             TimeOut: 50,
             Interval: 0,
             RunPanel: [0],

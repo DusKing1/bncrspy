@@ -782,11 +782,11 @@ let RspyList = {
     },
     /* 静默后监控结果输出位置  可填多个*/
     TabooLogsInfo: [
-        // 	{
-        // 	platform: "qq",
-        // 	toGroupOrUser: "userId",   //通知类型,个人userId //群groupId
-        // 	Id: "528006323"
-        // },
+         	{
+         	platform: "qq",
+         	toGroupOrUser: "userId",   //通知类型,个人userId //群groupId
+         	Id: "528006323"
+         },
          {
              platform: '', //发送平台
              toGroupOrUser: 'groupId', //通知类型,个人userId //群groupId

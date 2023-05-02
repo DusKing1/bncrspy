@@ -27,6 +27,18 @@ let RspyList = {
             Disable: false,
         },
         {
+            Name: '[KR] 完善信息有礼',
+            Script: 'KingRan_KR/jd_completeInfoActivity.js',
+            ListenEnv: [
+                'jd_completeInfoActivity_activityId',
+            ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
+            TimeOut: 0,
+            Interval: 0,
+            RunPanel: [0],
+            Disable: false,
+        },
+        {
             Name: '[KR] 超级无线店铺签到-监控版',
             Script: 'KingRan_KR/jd_sevenDayjk.js',
             ListenEnv: [

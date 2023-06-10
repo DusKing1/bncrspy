@@ -87,6 +87,18 @@ let RspyList = {
             Disable: false,
         },
         {
+            Name: '[KR] 店铺积分兑换京豆',
+            Script: 'KingRan_KR/jd_pointExgBeans.js',
+            ListenEnv: [
+                'jd_pointExgBeans_activityUrl',
+            ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
+            TimeOut: 0,
+            Interval: 0,
+            RunPanel: [0],
+            Disable: false,
+        },
+        {
             Name: '[KR] 分享有礼-加密',
             Script: 'KingRan_KR/jd_wxShareActivity.js',
             ListenEnv: [

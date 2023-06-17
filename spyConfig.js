@@ -37,3 +37,15 @@ let RspyList = {
             RunPanel: [0],
             Disable: false,
         },
+        {
+   Name: 'M-完善有礼',
+            Script: 'walle1798_WALL.E/m_jd_wx_completeDraw.js',
+            ListenEnv: ['jd_completeInfoActivity_activityId', 'M_WX_COMPLETE_DRAW_URL'],
+            SetEnv: {
+             jd_completeInfoActivity_activityId: 'M_WX_COMPLETE_DRAW_URL',
+            },
+            TimeOut: 0,
+            Interval: 0,
+            RunPanel: [0],
+            Disable: false,
+        },

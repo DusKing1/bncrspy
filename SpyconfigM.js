@@ -9,7 +9,6 @@ const RspyList = {
             /* 监听变量 */
             ListenEnv: ['M_FOLLOW_SHOP_ARGV'],
             /* 转换变量 */
-            },
             /* 超时退出 (秒)*/
             TimeOut: 0,
             /* 间隔时间(秒) */

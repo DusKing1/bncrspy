@@ -84,7 +84,8 @@ const RspyList = {
             TimeOut: 50,
             Interval: 0,
             RunPanel: [0],
-            D
+            Disable: false,
+        },
         {
             Name: 'M佬无线关注',
             Script: 'walle1798_EVE/m_jd_wx_shopGift.js',

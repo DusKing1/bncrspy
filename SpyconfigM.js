@@ -13,6 +13,29 @@ const RspyList = {
             RunPanel: [0],
             Disable: false,
         },
+        {
+            /* 任务名 确保任务名唯一性,因为id根据任务名计算生成*/ 
+			Name: 'M佬签到有礼',
+            /* 执行的脚本名 */
+            Script: 'walle1798_EVE/m_jd_wx_shopSign.js',
+            /* 监听变量 */
+            ListenEnv: ['M_WX_SHOP_SIGN_URL', 'LZKJ_SEVENDAY', 'LZKJ_SIGN','CJHY_SEVEDAY','CJHY_SIGN'],
+            /* 转换变量 */
+            SetEnv: {
+                CJHY_SEVENDAY: 'M_WX_SHOP_SIGN_URL',
+                CJHY_SIGN: 'M_WX_SHOP_SIGN_URL',
+                LZKJ_SEVENDAY: 'M_WX_SHOP_SIGN_URL',
+                LZKJ_SIGN: 'M_WX_SHOP_SIGN_URL',
+            },
+            /* 超时退出 (秒)*/
+            TimeOut: 0,
+            /* 间隔时间(秒) */
+            Interval: 30,
+            /* 运行面板 0 代表 面板管理中的第一个容器 以此类推 */
+            RunPanel: [0],
+            /* 禁用任务 */
+            Disable: false,
+        },
         ],
     /* 监控列表 */
     ListenList: [

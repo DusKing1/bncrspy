@@ -1,3 +1,4 @@
+// By柒月编辑适配M-EVE库 //
 const RspyList = {
     /* 监控信息配置 */
     SpyList: [
@@ -14,26 +15,302 @@ const RspyList = {
             Disable: false,
         },
         {
-            /* 任务名 确保任务名唯一性,因为id根据任务名计算生成*/ 
-			Name: 'M佬签到有礼',
-            /* 执行的脚本名 */
+            Name: 'M佬签到有礼',
             Script: 'walle1798_EVE/m_jd_wx_shopSign.js',
-            /* 监听变量 */
-            ListenEnv: ['M_WX_SHOP_SIGN_URL', 'LZKJ_SEVENDAY', 'LZKJ_SIGN','CJHY_SEVEDAY','CJHY_SIGN'],
-            /* 转换变量 */
-            SetEnv: {
-                CJHY_SEVENDAY: 'M_WX_SHOP_SIGN_URL',
-                CJHY_SIGN: 'M_WX_SHOP_SIGN_URL',
-                LZKJ_SEVENDAY: 'M_WX_SHOP_SIGN_URL',
-                LZKJ_SIGN: 'M_WX_SHOP_SIGN_URL',
-            },
-            /* 超时退出 (秒)*/
-            TimeOut: 0,
-            /* 间隔时间(秒) */
-            Interval: 30,
-            /* 运行面板 0 代表 面板管理中的第一个容器 以此类推 */
+            ListenEnv: [
+                'M_WX_SHOP_SIGN_URL',
+            ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
+            TimeOut: 50,
+            Interval: 0,
             RunPanel: [0],
-            /* 禁用任务 */
+            Disable: false,
+        },
+        {
+            Name: 'M佬分享福袋',
+            Script: 'walle1798_EVE/m_jd_wx_unPackDraw.js',
+            ListenEnv: [
+                'M_WX_UNPACK_DRAW_URL',
+            ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
+            TimeOut: 50,
+            Interval: 0,
+            RunPanel: [0],
+            Disable: false,
+        },
+        {
+            Name: 'M佬投票抽奖',
+            Script: 'walle1798_EVE/m_jd_wx_voteDraw.js',
+            ListenEnv: [
+                'M_WX_VOTE_DRAW_URL',
+            ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
+            TimeOut: 50,
+            Interval: 0,
+            RunPanel: [0],
+            Disable: false,
+        },
+        {
+            Name: 'M佬组队瓜分',
+            Script: 'walle1798_EVE/m_jd_wx_team.js',
+            ListenEnv: [
+                'M_WX_TEAM_URL',
+            ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
+            TimeOut: 50,
+            Interval: 0,
+            RunPanel: [0],
+            Disable: false,
+        },
+        {
+            Name: 'M佬邀请有礼JINGGENG',
+            Script: 'walle1798_EVE/m_jd_wx_showInviteJoin.js',
+            ListenEnv: [
+                'M_JINGGENG_INVITE_URL',
+            ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
+            TimeOut: 50,
+            Interval: 0,
+            RunPanel: [0],
+            Disable: false,
+        },
+        {
+            Name: 'M佬邀请有礼INTERACT',
+            Script: 'walle1798_EVE/m_jd_interact_invite.js',
+            ListenEnv: [
+                'M_INTERACT_INVITE_URL',
+            ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
+            TimeOut: 50,
+            Interval: 0,
+            RunPanel: [0],
+            D
+        {
+            Name: 'M佬无线关注',
+            Script: 'walle1798_EVE/m_jd_wx_shopGift.js',
+            ListenEnv: [
+                'M_WX_SHOP_GIFT_URL',
+            ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
+            TimeOut: 50,
+            Interval: 0,
+            RunPanel: [0],
+            Disable: false,
+        },
+        {
+            Name: 'M佬分享有礼',
+            Script: 'walle1798_EVE/m_jd_wx_share.js',
+            ListenEnv: [
+                'M_WX_SHARE_URL',
+            ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
+            TimeOut: 50,
+            Interval: 0,
+            RunPanel: [0],
+            Disable: false,
+        },
+        {
+            Name: 'M佬读秒手速',
+            Script: 'walle1798_EVE/m_jd_wx_secondDraw.js',
+            ListenEnv: [
+                'M_WX_SECOND_DRAW_URL',
+            ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
+            TimeOut: 50,
+            Interval: 0,
+            RunPanel: [0],
+            Disable: false,
+        },
+        {
+            Name: 'M佬积分兑换',
+            Script: 'walle1798_EVE/m_jd_wx_pointDraw.js',
+            ListenEnv: [
+                'M_WX_POINT_DRAW_URL',
+            ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
+            TimeOut: 50,
+            Interval: 0,
+            RunPanel: [0],
+            Disable: false,
+        },
+        {
+            Name: 'M佬通用开卡',
+            Script: 'walle1798_EVE/m_jdm_jd_wx_opencard_m.js',
+            ListenEnv: [
+                'M_WX_OPENCARD_M_URL',
+            ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
+            TimeOut: 50,
+            Interval: 0,
+            RunPanel: [0],
+            Disable: false,
+        },
+        {
+            Name: 'M佬幸运抽奖',
+            Script: 'walle1798_EVE/m_jd_wx_luckDraw.js',
+            ListenEnv: [
+                'M_WX_LUCK_DRAW_URL',
+            ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
+            TimeOut: 50,
+            Interval: 0,
+            RunPanel: [0],
+            Disable: false,
+        },
+        {
+            Name: 'M佬等级/生日礼包',
+            Script: 'walle1798_EVE/m_jd_wx_levelBirth.js',
+            ListenEnv: [
+                'M_WX_LEVEL_BIRTH_URL',
+            ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
+            TimeOut: 50,
+            Interval: 0,
+            RunPanel: [0],
+            Disable: false,
+        },
+        {
+            Name: 'M佬知识超人',
+            Script: 'walle1798_EVE/m_jd_wx_knowledge.js',
+            ListenEnv: [
+                'M_WX_KNOWLEDGE_URL',
+            ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
+            TimeOut: 50,
+            Interval: 0,
+            RunPanel: [0],
+            Disable: false,
+        },
+        {
+            Name: 'M佬无线游戏',
+            Script: 'walle1798_EVE/m_jd_wx_game.js',
+            ListenEnv: [
+                'M_WX_GAME_URL',
+            ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
+            TimeOut: 50,
+            Interval: 0,
+            RunPanel: [0],
+            Disable: false,
+        },
+        {
+            Name: 'M佬关注抽奖',
+            Script: 'walle1798_EVE/m_jd_wx_followDraw.js',
+            ListenEnv: [
+                'M_WX_FOLLOW_DRAW_URL',
+            ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
+            TimeOut: 50,
+            Interval: 0,
+            RunPanel: [0],
+            Disable: false,
+        },
+        {
+            Name: 'M佬粉丝互动',
+            Script: 'walle1798_EVE/m_jd_wx_fansDraw.js',
+            ListenEnv: [
+                'M_WX_FANS_DRAW_URL',
+            ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
+            TimeOut: 50,
+            Interval: 0,
+            RunPanel: [0],
+            Disable: false,
+        },
+        {
+            Name: 'M佬打豆豆',
+            Script: 'walle1798_EVE/m_jd_wx_dadoudou.js',
+            ListenEnv: [
+                'M_WX_DADOUDOU_URL',
+            ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
+            TimeOut: 50,
+            Interval: 0,
+            RunPanel: [0],
+            Disable: false,
+        },
+        {
+            Name: 'M佬完善有礼',
+            Script: 'walle1798_EVE/m_jd_wx_completeDraw.js',
+            ListenEnv: [
+                'M_WX_COMPLETE_DRAW_URL',
+            ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
+            TimeOut: 50,
+            Interval: 0,
+            RunPanel: [0],
+            Disable: false,
+        },
+        {
+            Name: 'M佬老虎机抽奖',
+            Script: 'walle1798_EVE/m_jd_wx_centerDraw.js',
+            ListenEnv: [
+                'M_WX_CENTER_DRAW_URL',
+            ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
+            TimeOut: 50,
+            Interval: 0,
+            RunPanel: [0],
+            Disable: false,
+        },
+        {
+            Name: 'M佬购物车锦鲤',
+            Script: 'walle1798_EVE/m_jd_wx_cartKoi.js',
+            ListenEnv: [
+                'M_WX_CARTKOI_URL',
+            ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
+            TimeOut: 50,
+            Interval: 0,
+            RunPanel: [0],
+            Disable: false,
+        },
+        {
+            Name: 'M佬加购有礼',
+            Script: 'walle1798_EVE/m_jd_wx_addCart.js',
+            ListenEnv: [
+                'M_WX_ADD_CART_URL',
+            ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
+            TimeOut: 50,
+            Interval: 0,
+            RunPanel: [0],
+            Disable: false,
+        },
+        {
+            Name: 'M佬店铺刮奖',
+            Script: 'walle1798_EVE/m_jd_shop_gyg.js',
+            ListenEnv: [
+                'M_GYG_SHOP_ARGV',
+            ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
+            TimeOut: 50,
+            Interval: 0,
+            RunPanel: [0],
+            Disable: false,
+        },
+        {
+            Name: 'M佬入会有礼',
+            Script: 'walle1798_EVE/m_jd_open_card.js',
+            ListenEnv: [
+                'M_OPEN_CARD_ARGV',
+            ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
+            TimeOut: 50,
+            Interval: 0,
+            RunPanel: [0],
+            Disable: false,
+        },
+        {
+            Name: 'M佬收藏有礼',
+            Script: 'walle1798_EVE/m_jd_fav_shop_gift.js',
+            ListenEnv: [
+                'M_FAV_SHOP_ARGV',
+            ],
+            execRegExp: ['(?<=activityId(=|%3D))[^&% ]+'],
+            TimeOut: 50,
+            Interval: 0,
+            RunPanel: [0],
             Disable: false,
         },
         ],

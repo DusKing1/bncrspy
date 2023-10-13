@@ -89,7 +89,7 @@ function ListS() {
             trans: [
                 {
                     ori: '-1',
-                    redi: 'M_WX_LUCK_DRAW_URL',
+                    redi: 'M_WX_ADD_CART_URL=\"%s\',
                 },
             ],
         },
@@ -99,7 +99,7 @@ function ListS() {
             trans: [
                 {
                     ori: '-1',
-                    redi: 'M_WX_LUCK_DRAW_URL',
+                    redi: 'M_WX_ADD_CART_URL=\"%s\',
                 },
             ],
         },
@@ -109,7 +109,7 @@ function ListS() {
             trans: [
                 {
                     ori: '-1',
-                    redi: 'M_WX_LUCK_DRAW_URL',
+                    redi: 'M_WX_ADD_CART_URL=\"%s\',
                 },
             ],
         },
@@ -160,6 +160,16 @@ function ListS() {
                 {
                     ori: '-1',
                     redi: 'M_WX_LUCK_DRAW_URL',
+                },
+            ],
+        },
+        {
+            keyword: /wxFansInterActionActivity/,
+            name: 'M佬粉丝互动',
+            trans: [
+                {
+                    ori: '-1',
+                    redi: 'M_WX_FANS_DRAW_URL=\"%s\',
                 },
             ],
         },

@@ -54,12 +54,112 @@ function ListS() {
     return [
         /******************M佬库********************** */
         {
-            keyword: /cjhy(dz)?-isv\.isvjcloud\.com\/wxTeam\/activity/,
-            name: 'CJ组队瓜分',
+            keyword: /(showTaskDraw|showDrawOne|/lzclient/|/wxDrawActivity/|^(?=.*gzsl-isv)(?=.*game).*$)/,
+            name: 'M幸运抽奖',
             trans: [
                 {
-                    ori: 'activityId',
-                    redi: 'jd_cjhy_activityId',
+                    ori: '-1',
+                    redi: 'M_WX_LUCK_DRAW_URL',
+                },
+            ],
+        },
+        {
+            keyword: /(activityType=(10020|10021|10026|10031|10042|10046|10063|10073|10080))/,
+            name: 'M幸运抽奖',
+            trans: [
+                {
+                    ori: '-1',
+                    redi: 'M_WX_LUCK_DRAW_URL',
+                },
+            ],
+        },
+        {
+            keyword: /(pointDraw|luckyGrid|turntable)/,
+            name: 'M幸运抽奖',
+            trans: [
+                {
+                    ori: '-1',
+                    redi: 'M_WX_LUCK_DRAW_URL',
+                },
+            ],
+        },
+        {
+            keyword: /(/wxCollectionActivity/|activityType=(10024))/,
+            name: 'M佬加购有礼',
+            trans: [
+                {
+                    ori: '-1',
+                    redi: 'M_WX_LUCK_DRAW_URL',
+                },
+            ],
+        },
+        {
+            keyword: /(plusGift|extraGift)/,
+            name: 'M佬加购有礼',
+            trans: [
+                {
+                    ori: '-1',
+                    redi: 'M_WX_LUCK_DRAW_URL',
+                },
+            ],
+        },
+        {
+            keyword: /(showCart)/,
+            name: 'M佬加购有礼',
+            trans: [
+                {
+                    ori: '-1',
+                    redi: 'M_WX_LUCK_DRAW_URL',
+                },
+            ],
+        },
+        {
+            keyword: /(/wxTeam/|activityType=(10033)|showPartition|partitionTeam)/,
+            name: 'M佬组队瓜分',
+            trans: [
+                {
+                    ori: '-1',
+                    redi: 'M_WX_LUCK_DRAW_URL',
+                },
+            ],
+        },
+        {
+            keyword: /(/wxShareActivity/|/shareGift/|activityType=(10043|10068))/,
+            name: 'M佬分享有礼',
+            trans: [
+                {
+                    ori: '-1',
+                    redi: 'M_WX_LUCK_DRAW_URL',
+                },
+            ],
+        },
+        {
+            keyword: /(activityType=(10068))/,
+            name: 'M佬分享有礼',
+            trans: [
+                {
+                    ori: '-1',
+                    redi: 'M_WX_LUCK_DRAW_URL',
+                },
+            ],
+        },
+        {
+            keyword: /(/completeInfoActivity/|activityType=(10049))/,
+            name: 'M佬完善信息',
+            trans: [
+                {
+                    ori: '-1',
+                    redi: 'M_WX_LUCK_DRAW_URL',
+                },
+            ],
+        },
+        {
+            keyword: /(showPerfectInformation)/,
+            name: 'M佬完善信息',
+            trans: [
+                {
+                    ori: '-1',
+                    redi: 'M_WX_LUCK_DRAW_URL',
                 },
             ],
         },

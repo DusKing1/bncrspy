@@ -173,3 +173,66 @@ function ListS() {
                 },
             ],
         },
+        ];
+}
+
+/* 诺兰口令解析接口 */
+async function nolanDecode(code) {
+    try {
+        const dbUrl = await new BncrDB('AmingScript').get('deCodeHost', 'https://api.nolanstore.cc');
+        return (
+            await request({
+                url: `${dbUrl}/JComExchange`,
+                method: 'post',
+                body: {
+                    code,
+                },
+                json: true,
+            })
+        )?.body?.data?.jumpUrl;
+    } catch (e) {
+        console.log('nolanDecode ' + e);
+        return void 0;
+    }
+}
+/* 解析函数 ,改于白眼 */
+function urlToExport(url) {
+    // console.log('urlToExport', url);
+    let ResArr = [];
+    const listS = ListS();
+    for (const oneList of listS) {
+        if (!url.match(oneList.keyword)) continue;
+        for (const r of oneList.trans) {
+            let temp = {
+                act: oneList.name,
+                name: r.redi,
+            };
+            if (+r.ori === -1) {
+                temp['value'] = encodeURI(url);
+            } else if (r.ori.indexOf(' ') !== -1) {
+                //提取多参数作为变量值
+                let pn = r.ori.split(' ');
+                let pv = [];
+                pn.forEach(ele => {
+                    console.log(ele);
+                    if (!ele) return;
+                    let reg = new RegExp('(?<=' + ele + '(=|%3D))[^&%]+'),
+                        actid = url.match(reg);
+                    if (actid) pv.push(actid[0]);
+                    else console.log(url + '\n中未找到活动参数:' + ele);
+                });
+                if (!pv.length) break;
+                if (r.sep) temp['value'] = pv.join(r.sep);
+                else console.log('内置解析规则' + JSON.stringify(oneList) + '缺少分割符');
+            } else {
+                // 提取参数作为变量
+                let reg = new RegExp(`(?<=${r.ori}(=|%3D))[^&%]+`),
+                    actid = url.match(reg);
+                if (!actid) break;
+                temp['value'] = actid[0];
+            }
+            temp['value'] && ResArr.push(temp);
+        }
+    }
+    return ResArr;
+}
